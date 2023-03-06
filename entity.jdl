@@ -1,0 +1,39 @@
+entity Apropos {
+Texte String
+}
+
+entity Introduction {
+introduction String
+}
+
+entity Objectif {
+objectif String
+}
+
+entity SalonMetier{
+salonMetier String
+}
+
+entity Entreprise {
+entreprise String 
+}
+
+entity Evenement {
+evenement String
+}
+
+entity Inscription {
+partenaire String
+non String
+prenon String
+adresseProfessionnelle String
+telephoneProfessionnelle String
+emailProfessionnelle String
+demandeStand DemandeStand 
+tailleStand String
+autres String
+}
+
+enum DemandeStand {
+OUI, NON
+}

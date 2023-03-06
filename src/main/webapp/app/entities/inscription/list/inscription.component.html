@@ -1,0 +1,94 @@
+<div>
+  <h2 id="page-heading" data-cy="InscriptionHeading">
+    <span>Inscriptions</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span>Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-inscription"
+        [routerLink]="['/inscription/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span> Create a new Inscription </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="inscriptions?.length === 0">
+    <span>No inscriptions found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="inscriptions && inscriptions.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span>ID</span></th>
+          <th scope="col"><span>Partenaire</span></th>
+          <th scope="col"><span>Non</span></th>
+          <th scope="col"><span>Prenon</span></th>
+          <th scope="col"><span>Adresse Professionnelle</span></th>
+          <th scope="col"><span>Telephone Professionnelle</span></th>
+          <th scope="col"><span>Email Professionnelle</span></th>
+          <th scope="col"><span>Demande Stand</span></th>
+          <th scope="col"><span>Taille Stand</span></th>
+          <th scope="col"><span>Autres</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let inscription of inscriptions; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/inscription', inscription.id, 'view']">{{ inscription.id }}</a>
+          </td>
+          <td>{{ inscription.partenaire }}</td>
+          <td>{{ inscription.non }}</td>
+          <td>{{ inscription.prenon }}</td>
+          <td>{{ inscription.adresseProfessionnelle }}</td>
+          <td>{{ inscription.telephoneProfessionnelle }}</td>
+          <td>{{ inscription.emailProfessionnelle }}</td>
+          <td>{{ inscription.demandeStand }}</td>
+          <td>{{ inscription.tailleStand }}</td>
+          <td>{{ inscription.autres }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/inscription', inscription.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/inscription', inscription.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(inscription)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

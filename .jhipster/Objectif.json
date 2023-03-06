@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20230306120207",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "objectif",
+  "fields": [
+    {
+      "fieldName": "objectif",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Objectif",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

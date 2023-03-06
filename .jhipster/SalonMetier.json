@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20230306120208",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "salon_metier",
+  "fields": [
+    {
+      "fieldName": "salonMetier",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SalonMetier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

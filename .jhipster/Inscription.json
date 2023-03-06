@@ -1,0 +1,53 @@
+{
+  "applications": "*",
+  "changelogDate": "20230306120211",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "inscription",
+  "fields": [
+    {
+      "fieldName": "partenaire",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "non",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenon",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresseProfessionnelle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephoneProfessionnelle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailProfessionnelle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "demandeStand",
+      "fieldType": "DemandeStand",
+      "fieldValues": "OUI,NON"
+    },
+    {
+      "fieldName": "tailleStand",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autres",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Inscription",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
