@@ -16,11 +16,15 @@ Navbar
 }
 
 .navbar {
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 2rem;
   background-color: white;
 
   a.nav-link {
-    font-weight: 400;
+    // font-weight: 400;
+    font-weight: bold;
+    color: blue;
+    position: relative;
+    padding: 1rem;
   }
 }
 
@@ -34,4 +38,11 @@ Logo styles
 //   vertical-align: middle;
 //   background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
 //   background-size: contain;
+// }
+
+// .nav{
+//   font-weight: bold;
+//   color: blue;
+//   position: relative;
+//   right: 30%;
 // }

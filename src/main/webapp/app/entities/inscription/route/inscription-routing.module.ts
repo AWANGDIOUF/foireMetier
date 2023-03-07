@@ -11,7 +11,7 @@ const inscriptionRoute: Routes = [
   {
     path: '',
     component: InscriptionComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const inscriptionRoute: Routes = [
     resolve: {
       inscription: InscriptionRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',
@@ -27,7 +27,7 @@ const inscriptionRoute: Routes = [
     resolve: {
       inscription: InscriptionRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/edit',

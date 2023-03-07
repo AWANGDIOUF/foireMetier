@@ -11,7 +11,7 @@ const aproposRoute: Routes = [
   {
     path: '',
     component: AproposComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const aproposRoute: Routes = [
     resolve: {
       apropos: AproposRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',

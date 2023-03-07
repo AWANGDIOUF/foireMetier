@@ -5,9 +5,15 @@
   margin-left: 0%;
   height: 30vh;
 }
-
+.tout {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+}
 .jh-card {
   background-image: url('../../../content/images/ciel.jpeg');
+  background-size: contain;
+  width: 100%;
 }
 .divise {
   font-size: 8px;

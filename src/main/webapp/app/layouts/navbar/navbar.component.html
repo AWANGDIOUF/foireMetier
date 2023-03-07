@@ -21,8 +21,8 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
           <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
-            <span>
-              <fa-icon icon="home"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="home"></fa-icon> -->
               <span>Accueil</span>
             </span>
           </a>
@@ -33,18 +33,19 @@
         <li
           ngbDropdown
           class="nav-item dropdown pointer"
+          routerLink="apropos"
           display="dynamic"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
               <span>A PROPOS DE MOI</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
-            <li>
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+             <li>
               <a
                 class="dropdown-item"
                 routerLink="apropos"
@@ -52,11 +53,11 @@
                 [routerLinkActiveOptions]="{ exact: true }"
                 (click)="collapseNavbar()"
               >
-                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-                <span>Apropos</span>
+                 <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                 <span>Apropos</span> 
               </a>
-            </li>
-          </ul>
+            </li> 
+          </ul> -->
           <!-- Introduction-->
         </li>
 
@@ -64,16 +65,17 @@
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"
+          routerLink="introduction"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
               <span>INTRODUCTION</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
             <li>
               <a
                 class="dropdown-item"
@@ -82,11 +84,11 @@
                 [routerLinkActiveOptions]="{ exact: true }"
                 (click)="collapseNavbar()"
               >
-                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon> 
                 <span>Introduction</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
           <!-- OBJECTIF -->
         </li>
 
@@ -94,16 +96,17 @@
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"
+          routerLink="objectif"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
               <span>OBJECTIF</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
             <li>
               <a
                 class="dropdown-item"
@@ -112,11 +115,11 @@
                 [routerLinkActiveOptions]="{ exact: true }"
                 (click)="collapseNavbar()"
               >
-                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon> 
                 <span>Objectif</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
           <!-- SALON DES METIERS -->
         </li>
 
@@ -124,16 +127,17 @@
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"
+          routerLink="salon-metier"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
               <span>SALON DES METIERS</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
             <li>
               <a
                 class="dropdown-item"
@@ -142,11 +146,11 @@
                 [routerLinkActiveOptions]="{ exact: true }"
                 (click)="collapseNavbar()"
               >
-                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                 <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon> 
                 <span>Salon Metier</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
           <!-- ENTREPRISES -->
         </li>
 
@@ -154,16 +158,17 @@
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"
+          routerLink="entreprise"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
               <span>ENTREPRISES</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
             <li>
               <a
                 class="dropdown-item"
@@ -172,11 +177,10 @@
                 [routerLinkActiveOptions]="{ exact: true }"
                 (click)="collapseNavbar()"
               >
-                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-                <span>Entreprise</span>
+                 <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>               <span>Entreprise</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
           <!-- EVENEMENT -->
         </li>
 
@@ -184,16 +188,17 @@
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"
+          routerLink="evenement"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
               <span>EVENEMENT</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
             <li>
               <a
                 class="dropdown-item"
@@ -202,11 +207,11 @@
                 [routerLinkActiveOptions]="{ exact: true }"
                 (click)="collapseNavbar()"
               >
-                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                 <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon> 
                 <span>Evenement</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
           <!-- INTRODUCTION -->
         </li>
 
@@ -214,16 +219,17 @@
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"
+          [routerLink]="['/inscription/new']"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
-            <span>
-              <fa-icon icon="th-list"></fa-icon>
-              <span>INSCRIPTION</span>
+            <span class="nav">
+              <!-- <fa-icon icon="th-list"></fa-icon> -->
+              <span>S'INSCRIRE</span>
             </span>
           </a>
-          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
+          <!-- <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
             <li>
               <a
                 class="dropdown-item"
@@ -236,8 +242,8 @@
                 <span>Inscription</span>
               </a>
             </li>
-            <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
-          </ul>
+            jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here 
+          </ul> -->
         </li>
         <!-- <li
           *jhiHasAnyAuthority="'ROLE_ADMIN'"

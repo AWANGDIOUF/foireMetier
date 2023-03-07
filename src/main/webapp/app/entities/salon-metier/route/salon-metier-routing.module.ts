@@ -11,7 +11,7 @@ const salonMetierRoute: Routes = [
   {
     path: '',
     component: SalonMetierComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const salonMetierRoute: Routes = [
     resolve: {
       salonMetier: SalonMetierRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',

@@ -11,7 +11,7 @@ const entrepriseRoute: Routes = [
   {
     path: '',
     component: EntrepriseComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const entrepriseRoute: Routes = [
     resolve: {
       entreprise: EntrepriseRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',

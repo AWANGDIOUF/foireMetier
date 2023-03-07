@@ -11,7 +11,7 @@ const evenementRoute: Routes = [
   {
     path: '',
     component: EvenementComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const evenementRoute: Routes = [
     resolve: {
       evenement: EvenementRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',

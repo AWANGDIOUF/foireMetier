@@ -11,7 +11,7 @@ const objectifRoute: Routes = [
   {
     path: '',
     component: ObjectifComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const objectifRoute: Routes = [
     resolve: {
       objectif: ObjectifRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',

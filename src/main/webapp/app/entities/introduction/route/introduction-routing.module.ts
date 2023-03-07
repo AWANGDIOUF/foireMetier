@@ -11,7 +11,7 @@ const introductionRoute: Routes = [
   {
     path: '',
     component: IntroductionComponent,
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/view',
@@ -19,7 +19,7 @@ const introductionRoute: Routes = [
     resolve: {
       introduction: IntroductionRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: 'new',
@@ -27,7 +27,7 @@ const introductionRoute: Routes = [
     resolve: {
       introduction: IntroductionRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
   {
     path: ':id/edit',
@@ -35,7 +35,7 @@ const introductionRoute: Routes = [
     resolve: {
       introduction: IntroductionRoutingResolveService,
     },
-    canActivate: [UserRouteAccessService],
+    //canActivate: [UserRouteAccessService],
   },
 ];
 
