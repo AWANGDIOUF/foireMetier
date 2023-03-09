@@ -1,103 +1,130 @@
 <div class="d-flex justify-content-center">
   <div class="col-8">
+    <div class="bar"></div>
     <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
-      <h2 id="jhi-inscription-heading" data-cy="InscriptionCreateUpdateHeading">Create or edit a Inscription</h2>
+      <h2 id="jhi-inscription-heading" data-cy="InscriptionCreateUpdateHeading" class="create">Pré-inscription Salon des Métiers de SOS</h2>
+      <p class="form">
+        Première édition<br />
+        AU C.I.C.E.S DU 26 AU 28 MAI 2023
+      </p>
 
       <div>
         <jhi-alert-error></jhi-alert-error>
 
-        <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
+        <!-- <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
           <label class="form-label" for="field_id">ID</label>
           <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
-        </div>
+        </div> -->
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <br />
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_partenaire">Partenaire</label>
-          <input
-            type="text"
-            class="form-control"
-            name="partenaire"
-            id="field_partenaire"
-            data-cy="partenaire"
-            formControlName="partenaire"
-          />
-        </div>
+            <div class="form-group">
+              <label class="form-label" for="field_partenaire">Partenaire/Structure</label>
+              <input
+                type="text"
+                class="form-control"
+                name="partenaire"
+                id="field_partenaire"
+                data-cy="partenaire"
+                formControlName="partenaire"
+              />
+            </div>
+            <br />
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_non">Non</label>
-          <input type="text" class="form-control" name="non" id="field_non" data-cy="non" formControlName="non" />
-        </div>
+            <div class="form-group">
+              <label class="form-label" for="field_non">Nom</label>
+              <input type="text" class="form-control" name="non" id="field_non" data-cy="non" formControlName="non" />
+            </div>
+            <br />
+            <div class="form-group">
+              <label class="form-label" for="field_prenon">Prénom</label>
+              <input type="text" class="form-control" name="prenon" id="field_prenon" data-cy="prenon" formControlName="prenon" />
+            </div>
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_prenon">Prenon</label>
-          <input type="text" class="form-control" name="prenon" id="field_prenon" data-cy="prenon" formControlName="prenon" />
-        </div>
+            <br />
+            <div class="form-group">
+              <label class="form-label" for="field_adresseProfessionnelle">Adresse Professionnelle</label>
+              <input
+                type="text"
+                class="form-control"
+                name="adresseProfessionnelle"
+                id="field_adresseProfessionnelle"
+                data-cy="adresseProfessionnelle"
+                formControlName="adresseProfessionnelle"
+              />
+            </div>
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_adresseProfessionnelle">Adresse Professionnelle</label>
-          <input
-            type="text"
-            class="form-control"
-            name="adresseProfessionnelle"
-            id="field_adresseProfessionnelle"
-            data-cy="adresseProfessionnelle"
-            formControlName="adresseProfessionnelle"
-          />
-        </div>
+            <br />
+            <div class="form-group">
+              <label class="form-label" for="field_telephoneProfessionnelle">Téléphone Professionnelle</label>
+              <input
+                type="text"
+                class="form-control"
+                name="telephoneProfessionnelle"
+                id="field_telephoneProfessionnelle"
+                data-cy="telephoneProfessionnelle"
+                formControlName="telephoneProfessionnelle"
+              />
+            </div>
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_telephoneProfessionnelle">Telephone Professionnelle</label>
-          <input
-            type="text"
-            class="form-control"
-            name="telephoneProfessionnelle"
-            id="field_telephoneProfessionnelle"
-            data-cy="telephoneProfessionnelle"
-            formControlName="telephoneProfessionnelle"
-          />
-        </div>
+            <br />
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_emailProfessionnelle">Email Professionnelle</label>
-          <input
-            type="text"
-            class="form-control"
-            name="emailProfessionnelle"
-            id="field_emailProfessionnelle"
-            data-cy="emailProfessionnelle"
-            formControlName="emailProfessionnelle"
-          />
-        </div>
+            <div class="form-group">
+              <label class="form-label" for="field_emailProfessionnelle">Email Professionnelle</label>
+              <input
+                type="text"
+                class="form-control"
+                name="emailProfessionnelle"
+                id="field_emailProfessionnelle"
+                data-cy="emailProfessionnelle"
+                formControlName="emailProfessionnelle"
+              />
+            </div>
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_demandeStand">Demande Stand</label>
-          <select class="form-control" name="demandeStand" formControlName="demandeStand" id="field_demandeStand" data-cy="demandeStand">
-            <option [ngValue]="null"></option>
-            <option *ngFor="let demandeStand of demandeStandValues" [value]="demandeStand">demandeStand</option>
-          </select>
-        </div>
+            <br />
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_tailleStand">Taille Stand</label>
-          <input
-            type="text"
-            class="form-control"
-            name="tailleStand"
-            id="field_tailleStand"
-            data-cy="tailleStand"
-            formControlName="tailleStand"
-          />
-        </div>
+            <div class="form-group">
+              <label class="form-label" for="field_demandeStand">Demande Stand</label>
+              <select
+                class="form-control"
+                name="demandeStand"
+                formControlName="demandeStand"
+                id="field_demandeStand"
+                data-cy="demandeStand"
+              >
+                <option [ngValue]="null"></option>
+                <option *ngFor="let demandeStand of demandeStandValues" [value]="demandeStand">{{ demandeStand }}</option>
+              </select>
+            </div>
 
-        <div class="row mb-3">
-          <label class="form-label" for="field_autres">Autres</label>
-          <input type="text" class="form-control" name="autres" id="field_autres" data-cy="autres" formControlName="autres" />
+            <br />
+
+            <div class="form-group">
+              <label class="form-label" for="field_tailleStand">Taille du Stand</label>
+              <input
+                type="text"
+                class="form-control"
+                name="tailleStand"
+                id="field_tailleStand"
+                data-cy="tailleStand"
+                formControlName="tailleStand"
+              />
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label class="form-label" for="field_autres">Autres</label>
+              <input type="text" class="form-control" name="autres" id="field_autres" data-cy="autres" formControlName="autres" />
+            </div>
+          </div>
         </div>
       </div>
-
-      <div>
+      <br />
+      <div class="can-sav">
         <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
-          <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span>Annuler</span>
         </button>
 
         <button
@@ -107,9 +134,10 @@
           [disabled]="editForm.invalid || isSaving"
           class="btn btn-primary"
         >
-          <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+          <fa-icon icon="save"></fa-icon>&nbsp;<span>Sauvegarder</span>
         </button>
       </div>
+      <br />
     </form>
   </div>
 </div>

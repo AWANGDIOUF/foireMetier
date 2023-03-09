@@ -1,0 +1,49 @@
+.row {
+  position: relative;
+  font-size: 14px;
+}
+.form {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(7, 25, 185);
+}
+
+.can-sav {
+  position: relative;
+  left: 250px;
+}
+.col-md-6 {
+  font-weight: bold;
+  background-color: #fffdfd;
+}
+.create {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(7, 25, 185);
+}
+
+.col-8 {
+  background-color: rgb(171, 205, 238);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.form-label {
+  color: rgb(7, 25, 185);
+  font-weight: bold;
+}
+
+.form-control {
+  height: 8vh;
+}
+
+.bar {
+  position: relative;
+  height: 5vh;
+  background-color: blue;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}

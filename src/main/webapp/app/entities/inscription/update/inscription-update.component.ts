@@ -12,6 +12,7 @@ import { DemandeStand } from 'app/entities/enumerations/demande-stand.model';
 @Component({
   selector: 'jhi-inscription-update',
   templateUrl: './inscription-update.component.html',
+  styleUrls: ['./inscription-update.component.scss'],
 })
 export class InscriptionUpdateComponent implements OnInit {
   isSaving = false;

@@ -9,6 +9,7 @@ import { InscriptionDeleteDialogComponent } from '../delete/inscription-delete-d
 @Component({
   selector: 'jhi-inscription',
   templateUrl: './inscription.component.html',
+  styleUrls: ['./inscription.component.scss'],
 })
 export class InscriptionComponent implements OnInit {
   inscriptions?: IInscription[];
