@@ -9,6 +9,7 @@ import { ObjectifDeleteDialogComponent } from '../delete/objectif-delete-dialog.
 @Component({
   selector: 'jhi-objectif',
   templateUrl: './objectif.component.html',
+  styleUrls: ['./objectif.component.scss'],
 })
 export class ObjectifComponent implements OnInit {
   objectifs?: IObjectif[];

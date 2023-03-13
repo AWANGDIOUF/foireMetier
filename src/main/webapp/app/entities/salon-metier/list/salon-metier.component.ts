@@ -9,6 +9,7 @@ import { SalonMetierDeleteDialogComponent } from '../delete/salon-metier-delete-
 @Component({
   selector: 'jhi-salon-metier',
   templateUrl: './salon-metier.component.html',
+  styleUrls: ['./salon-metier.component.scss'],
 })
 export class SalonMetierComponent implements OnInit {
   salonMetiers?: ISalonMetier[];

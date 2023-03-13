@@ -6,20 +6,29 @@ Main page styles
 }
 .hipster {
   display: inline-block;
-  width: 347px;
-  height: 497px;
-  background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
+  width: 70vh;
+  height: 90vh;
+  background: url('../../content/images/home.jfif') no-repeat center top;
   background-size: contain;
+}
+.titre {
+  font-weight: bold;
+  font-size: 4vh;
+  margin-left: 12px;
+}
+.home {
+  text-align: center;
+  font-size: 10vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (-moz-min-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .hipster {
-    background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
-    background-size: contain;
-  }
-}
+// @media only screen and (-webkit-min-device-pixel-ratio: 2),
+//   only screen and (-moz-min-device-pixel-ratio: 2),
+//   only screen and (-o-min-device-pixel-ratio: 2/1),
+//   only screen and (min-resolution: 192dpi),
+//   only screen and (min-resolution: 2dppx) {
+//   .hipster {
+//     background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
+//     background-size: contain;
+//   }

@@ -9,6 +9,7 @@ import { AproposDeleteDialogComponent } from '../delete/apropos-delete-dialog.co
 @Component({
   selector: 'jhi-apropos',
   templateUrl: './apropos.component.html',
+  styleUrls: ['./apropos.component.scss'],
 })
 export class AproposComponent implements OnInit {
   apropos?: IApropos[];

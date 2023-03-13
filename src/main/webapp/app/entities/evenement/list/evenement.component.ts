@@ -9,6 +9,7 @@ import { EvenementDeleteDialogComponent } from '../delete/evenement-delete-dialo
 @Component({
   selector: 'jhi-evenement',
   templateUrl: './evenement.component.html',
+  styleUrls: ['./evenement.component.scss'],
 })
 export class EvenementComponent implements OnInit {
   evenements?: IEvenement[];

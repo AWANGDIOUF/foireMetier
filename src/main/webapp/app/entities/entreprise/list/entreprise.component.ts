@@ -9,6 +9,7 @@ import { EntrepriseDeleteDialogComponent } from '../delete/entreprise-delete-dia
 @Component({
   selector: 'jhi-entreprise',
   templateUrl: './entreprise.component.html',
+  styleUrls: ['./entreprise.component.scss'],
 })
 export class EntrepriseComponent implements OnInit {
   entreprises?: IEntreprise[];
